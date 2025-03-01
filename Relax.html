@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serenity Space | Find Your Inner Peace</title>
+    <link rel="stylesheet" href="RelaxWebsiteProject/Relax.css">
+    <style>
+        /* 样式代码，稍后提供 */
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container header-container">
+            <a href="/" class="logo">
+                <i class="fas fa-leaf"></i>
+                <span class="logo-text">Serenity Space</span>
+            </a>
+            <nav></nav>
+            <div class="mobile-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Find Your Inner Peace</h1>
+            <p>Welcome to Serenity Space, your sanctuary for relaxation and mindfulness in the digital world. Discover natural sounds, stress relief techniques, and inspiring content.</p>
+        </div>
+        <div class="sound-links">
+            <a href="#ocean">Ocean Waves</a>
+            <a href="#rain">Rain Sounds</a>
+            <a href="#forest">Forest Sounds</a>
+            <a href="#fireplace">Fireplace</a>
+            <a href="#stream">Stream</a>
+            <a href="#forest-bathing">Forest Bathing</a>
+        </div>
+    </section>
+
+    <!-- 海浪声分页面 -->
+    <section id="ocean" class="subpage">
+        <div class="container">
+            <h2>Ocean Waves Therapy</h2>
+            <img src="Waves.jpg" alt="Ocean Waves">
+            <p>Immerse yourself in the relaxing sounds of ocean waves crashing on the shore. This soundscape can help lower blood pressure, reduce stress, and induce a state of calm.</p>
+            <p>Perfect for meditation or creating a peaceful work environment.</p>
+            <p>Duration: 30 minutes</p>
+        </div>
+    </section>
+
+    <!-- 雨声分页面 -->
+    <section id="rain" class="subpage">
+        <div class="container">
+            <h2>Rain Sounds</h2>
+            <img src="Rain.jpg" alt="Rain Sounds">
+            <p>Experience the soothing patter of rain that creates a natural white noise, masking distractions and helping create a cozy atmosphere.</p>
+            <p>Studies show that rainfall sounds can improve concentration and sleep quality.</p>
+            <p>Duration: 60 minutes</p>
+        </div>
+    </section>
+
+    <!-- 森林声分页面 -->
+    <section id="forest" class="subpage">
+        <div class="container">
+            <h2>Forest Sounds</h2>
+            <img src="Forest.jpg" alt="Forest Sounds">
+            <p>Experience the gentle rustling of leaves and soft forest sounds that provide a natural connection to the outdoors.</p>
+            <p>This soundscape helps reduce mental fatigue and promote a sense of well-being.</p>
+            <p>Duration: 45 minutes</p>
+        </div>
+    </section>
+
+    <!-- 壁炉声分页面 -->
+    <section id="fireplace" class="subpage">
+        <div class="container">
+            <h2>Fireplace</h2>
+            <img src="fireplace.jpg" alt="Fireplace">
+            <p>The warm, gentle crackling of a fireplace creates a sense of comfort and security. This peaceful ambient sound is perfect for creating a cozy atmosphere or drowning out distracting noises.</p>
+            <p>Duration: 60 minutes</p>
+        </div>
+    </section>
+
+    <!-- 溪流声分页面 -->
+    <section id="stream" class="subpage">
+        <div class="container">
+            <h2>Stream</h2>
+            <img src="Stream.jpg" alt="Stream">
+            <p>The gentle bubbling of a woodland stream creates a peaceful soundscape that can help reduce anxiety and create a sense of tranquility.</p>
+            <p>The natural rhythm is ideal for stress reduction.</p>
+            <p>Duration: 30 minutes</p>
+        </div>
+    </section>
+
+    <!-- 森林浴分页面 -->
+    <section id="forest-bathing" class="subpage">
+        <div class="container">
+            <h2>Forest Bathing</h2>
+            <img src="forest bathing.jpg" alt="Forest Bathing">
+            <p>Explore the healing power of nature and discover how connecting with the natural world can improve your physical and mental wellbeing.</p>
+            <p>Discover the Japanese practice of Shinrin-Yoku (Forest Bathing), which involves immersing yourself in a forest atmosphere to reduce stress and boost your immune system.</p>
+        </div>
+    </section>
+
+    <script>
+        const mobileToggle = document.querySelector('.mobile-toggle');
+        const nav = document.querySelector('nav');
+
+        mobileToggle.addEventListener('click', () => {
+            nav.classList.toggle('open');
+        });
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                document.querySelector('header').classList.add('scrolled');
+            } else {
+                document.querySelector('header').classList.remove('scrolled');
+            }
+        });
+    </script>
+
+</body>
+</html>
