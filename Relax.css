@@ -861,3 +861,59 @@ header {
     font-size: 24px;
   }
 }
+
+/* 修改 sound-links 样式，使其在移动设备上正确显示 */
+@media (max-width: 768px) {
+  .sound-links {
+    position: static; /* 取消绝对定位 */
+    transform: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px auto;
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .sound-links a {
+    width: 100%;
+    text-align: center;
+    margin: 5px 0;
+    padding: 10px 0;
+  }
+
+  /* 确保英雄区域在移动设备上正确显示 */
+  .hero {
+    flex-direction: column;
+    height: auto;
+    min-height: 100vh;
+    padding-top: 100px; /* 为固定header留出空间 */
+  }
+
+  .hero-content {
+    margin-bottom: 20px;
+  }
+
+  .hero-content h1 {
+    font-size: 2.5em;
+  }
+
+  .hero-content p {
+    font-size: 1.2em;
+  }
+}
+
+/* 添加极小屏幕的额外优化 */
+@media (max-width: 480px) {
+  .hero-content h1 {
+    font-size: 2em;
+  }
+
+  .hero-content p {
+    font-size: 1em;
+  }
+
+  .sound-links a {
+    font-size: 1em;
+  }
+}
