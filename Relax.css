@@ -683,78 +683,181 @@ footer {
     }
 }
 
-/* 分页内容样式 */
-.subpage {
-    padding: 40px 0;
-    text-align: center;
+/* 其他样式保持不变，只修改以下部分 */
+/* 其他样式保持不变，只修改以下部分 */
+
+/* 动态内容容器样式 */
+/* 页面样式 */
+.page {
+  padding: 30px 0;
+  text-align: center;
+  min-height: 100vh; /* 确保页面占满整个视口高度 */
 }
 
-.subpage img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
-    margin-bottom: 20px;
+.page img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 30px;
 }
+
 
 /* Hero Section Styles */
 .hero {
-    height: 50vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('https://source.unsplash.com/1200x800/?nature,calm') no-repeat center center/cover;
-    color: white;
-    position: relative;
-    overflow: hidden;
-    width: 100%; /* 确保背景填充整个区域 */
-    padding: 20px; /* 增加内边距，防止内容紧贴边缘 */
-    box-sizing: border-box; /* 包含内边距在元素总宽度内 */
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('https://source.unsplash.com/1200x800/?nature,calm') no-repeat center center/cover;
+  color: white;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
 }
 
 .hero-content {
-    text-align: center;
-    max-width: 800px;
-    padding: 20px;
-    position: relative;
-    z-index: 2;
-    opacity: 0;
-    transform: translateY(20px);
-    animation: fadeIn 1s ease forwards 0.5s;
+  text-align: center;
+  max-width: 800px;
+  padding: 20px;
+  position: relative;
+  z-index: 2;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeIn 1s ease forwards 0.5s;
 }
 
 .hero-content h1 {
-    font-size: 3.5em; /* 增大标题 */
-    margin-bottom: 0.5em;
+  font-size: 4em;
+  margin-bottom: 0.5em;
 }
 
 .hero-content p {
-    font-size: 1.2em; /* 增大段落文本 */
+  font-size: 1.5em;
+  margin-bottom: 1.5em;
 }
-
 
 /* Sound Links Styles */
 .sound-links {
-    position: absolute;
-    top: 100px;
-    right: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
 }
 
 .sound-links a {
-    color: #E8C07D;
-    text-decoration: none;
-    margin: 6px 0;
-    font-weight: 500;
-    transition: all 0.3s ease;
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 8px 15px; /* 增大内边距 */
-    border-radius: 5px;
-    font-size: 1.1em; /* 略微增大字体 */
+  color: #E8C07D;
+  text-decoration: none;
+  margin: 10px 0;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 12px 20px;
+  border-radius: 5px;
+  font-size: 1.2em;
 }
 
 .sound-links a:hover {
-    color: #7EB5A6;
-    background-color: rgba(0, 0, 0, 0.7);
+  color: #7EB5A6;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+/* 确保 body 和 html 没有多余的边距和填充 */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%; /* 确保 body 和 html 高度为100% */
+  overflow-x: hidden; /* 防止水平滚动 */
+}
+
+/* 确保其他部分不会产生多余的空白 */
+.subpage {
+  padding: 0; /* 移除子页面的默认 padding */
+  margin: 0; /* 移除子页面的默认 margin */
+}
+
+.content-page {
+  padding-top: 100px; /* 为固定头部留出空间 */
+  text-align: center;
+  min-height: 100vh;
+}
+
+.content-page .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.content-page h2 {
+  margin-bottom: 30px;
+  font-size: 36px;
+  color: var(--dark-color);
+}
+
+.content-page audio {
+  width: 80%;
+  max-width: 600px;
+  margin: 20px auto;
+  display: block;
+}
+
+.content-page img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin: 30px auto;
+  display: block;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.content-page p {
+  font-size: 18px;
+  line-height: 1.7;
+  color: #444;
+  max-width: 800px;
+  margin: 0 auto 40px;
+}
+
+/* 保持主页正常显示 */
+#home {
+  padding-top: 0;
+}
+
+/* 调整头部样式确保固定在顶部 */
+header {
+  background-color: rgba(255, 255, 255, 0.9);
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+  padding: 20px 0;
+  transition: all 0.5s ease;
+}
+
+/* 媒体查询 - 适配不同尺寸的设备 */
+@media (max-width: 768px) {
+  .content-page {
+    padding-top: 80px;
+  }
+  
+  .content-page h2 {
+    font-size: 28px;
+  }
+  
+  .content-page audio {
+    width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  .content-page {
+    padding-top: 70px;
+  }
+  
+  .content-page h2 {
+    font-size: 24px;
+  }
 }
