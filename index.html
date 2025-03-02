@@ -5,15 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Serenity Space | Find Your Inner Peace</title>
     <link rel="stylesheet" href="Relax.css">
-    <style>
-        /* 样式代码，稍后提供 */
-    </style>
 </head>
 <body>
 
     <header>
         <div class="container header-container">
-            <a href="/" class="logo">
+            <a href="javascript:loadPage('home')" class="logo">
                 <i class="fas fa-leaf"></i>
                 <span class="logo-text">Serenity Space</span>
             </a>
@@ -24,107 +21,88 @@
         </div>
     </header>
 
-    <section class="hero">
-        <div class="hero-content">
-            <h1>Find Your Inner Peace</h1>
-            <p>Welcome to Serenity Space, your sanctuary for relaxation and mindfulness in the digital world. Discover natural sounds, stress relief techniques, and inspiring content.
-            You can mix different sounds,that will be nice!!!</p>
-        </div>
-        <div class="sound-links">
-            <a href="#ocean">Ocean Waves</a>
-            <a href="#rain">Rain Sounds</a>
-            <a href="#forest">Forest Sounds</a>
-            <a href="#fireplace">Fireplace</a>
-            <a href="#stream">Stream</a>
-            <a href="#forest-bathing">Forest Bathing</a>
+    <!-- 主页内容 -->
+    <section id="home" class="page">
+        <div class="hero">
+            <div class="hero-content">
+                <h1>Find Your Inner Peace</h1>
+                <p>Welcome to Serenity Space, your sanctuary for relaxation and mindfulness in the digital world. Discover natural sounds, stress relief techniques, and inspiring content.</p>
+            </div>
+            <div class="sound-links">
+                <a href="javascript:loadPage('ocean')">Ocean Waves</a>
+                <a href="javascript:loadPage('rain')">Rain Sounds</a>
+                <a href="javascript:loadPage('forest')">Forest Sounds</a>
+                <a href="javascript:loadPage('fireplace')">Fireplace</a>
+                <a href="javascript:loadPage('stream')">Stream</a>
+                <a href="javascript:loadPage('forest-bathing')">Forest Bathing</a>
+            </div>
         </div>
     </section>
 
-    <!-- 海浪声分页面 -->
-    <section id="ocean" class="subpage">
+    <!-- 动态页面内容 - 为每个页面添加了顶部边距 -->
+    <section id="ocean" class="content-page" style="display: none;">
         <div class="container">
             <h2>Ocean Waves Therapy</h2>
             <audio controls>
                 <source src="OceanWave.mp3" type="audio/mpeg">
-                Your browser does not support the audio element.
             </audio>
             <img src="Waves.jpg" alt="Ocean Waves">
-            <p>Immerse yourself in the relaxing sounds of ocean waves crashing on the shore. This soundscape can help lower blood pressure, reduce stress, and induce a state of calm.</p>
-            <p>Perfect for meditation or creating a peaceful work environment.</p>
-            <p>Duration: 30 minutes</p>
+            <p>Immerse yourself in the relaxing sounds of ocean waves crashing on the shore...</p>
         </div>
     </section>
 
-    <!-- 雨声分页面 -->
-    <section id="rain" class="subpage">
+    <section id="rain" class="content-page" style="display: none;">
         <div class="container">
             <h2>Rain Sounds</h2>
             <audio controls>
                 <source src="RainSound.mp3" type="audio/mpeg">
-                Your browser does not support the audio element.
             </audio>
             <img src="Rain.jpg" alt="Rain Sounds">
-            <p>Experience the soothing patter of rain that creates a natural white noise, masking distractions and helping create a cozy atmosphere.</p>
-            <p>Studies show that rainfall sounds can improve concentration and sleep quality.</p>
-            <p>Duration: 60 minutes</p>
+            <p>Experience the soothing patter of rain that creates a natural white noise...</p>
         </div>
     </section>
 
-    <!-- 森林声分页面 -->
-    <section id="forest" class="subpage">
+    <section id="forest" class="content-page" style="display: none;">
         <div class="container">
             <h2>Forest Sounds</h2>
             <audio controls>
                 <source src="ForestSound.mp3" type="audio/mpeg">
-                Your browser does not support the audio element.
             </audio>
             <img src="Forest.jpg" alt="Forest Sounds">
-            <p>Experience the gentle rustling of leaves and soft forest sounds that provide a natural connection to the outdoors.</p>
-            <p>This soundscape helps reduce mental fatigue and promote a sense of well-being.</p>
-            <p>Duration: 45 minutes</p>
+            <p>Experience the gentle rustling of leaves and soft forest sounds...</p>
         </div>
     </section>
 
-    <!-- 壁炉声分页面 -->
-    <section id="fireplace" class="subpage">
+    <section id="fireplace" class="content-page" style="display: none;">
         <div class="container">
             <h2>Fireplace</h2>
             <audio controls>
                 <source src="fireplaceSound.mp3" type="audio/mpeg">
-                Your browser does not support the audio element.
             </audio>
             <img src="fireplace.jpg" alt="Fireplace">
-            <p>The warm, gentle crackling of a fireplace creates a sense of comfort and security. This peaceful ambient sound is perfect for creating a cozy atmosphere or drowning out distracting noises.</p>
-            <p>Duration: 60 minutes</p>
+            <p>The warm, gentle crackling of a fireplace creates a sense of comfort...</p>
         </div>
     </section>
 
-    <!-- 溪流声分页面 -->
-    <section id="stream" class="subpage">
+    <section id="stream" class="content-page" style="display: none;">
         <div class="container">
             <h2>Stream</h2>
             <audio controls>
                 <source src="StreamSound.mp3" type="audio/mpeg">
-                Your browser does not support the audio element.
             </audio>
             <img src="Stream.jpg" alt="Stream">
-            <p>The gentle bubbling of a woodland stream creates a peaceful soundscape that can help reduce anxiety and create a sense of tranquility.</p>
-            <p>The natural rhythm is ideal for stress reduction.</p>
-            <p>Duration: 30 minutes</p>
+            <p>The gentle bubbling of a woodland stream creates a peaceful soundscape...</p>
         </div>
     </section>
 
-    <!-- 森林浴分页面 -->
-    <section id="forest-bathing" class="subpage">
+    <section id="forest-bathing" class="content-page" style="display: none;">
         <div class="container">
             <h2>Forest Bathing</h2>
             <audio controls>
                 <source src="Forestbathing.mp3" type="audio/mpeg">
-                Your browser does not support the audio element.
             </audio>
             <img src="forest bathing.jpg" alt="Forest Bathing">
-            <p>Explore the healing power of nature and discover how connecting with the natural world can improve your physical and mental wellbeing.</p>
-            <p>Discover the Japanese practice of Shinrin-Yoku (Forest Bathing), which involves immersing yourself in a forest atmosphere to reduce stress and boost your immune system.</p>
+            <p>Explore the healing power of nature...</p>
         </div>
     </section>
 
@@ -143,6 +121,27 @@
                 document.querySelector('header').classList.remove('scrolled');
             }
         });
+
+        // 动态加载页面内容
+        function loadPage(page) {
+            // 隐藏所有页面
+            document.querySelectorAll('.page, .content-page').forEach(section => {
+                section.style.display = 'none';
+            });
+
+            // 显示目标页面
+            const targetPage = document.getElementById(page);
+            if (targetPage) {
+                targetPage.style.display = 'block';
+                // 滚动到页面顶部
+                window.scrollTo(0, 0);
+            }
+        }
+
+        // 页面加载时显示主页
+        window.onload = () => {
+            loadPage('home'); // 显示主页
+        };
     </script>
 
 </body>
