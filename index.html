@@ -3,32 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Serenity Space - Professional relaxation platform offering nature sound therapy, mindfulness guides, and scientific articles to help you reduce stress and improve sleep quality">
+    <meta name="keywords" content="relaxation, nature sounds, mindfulness, stress relief, sleep therapy, ocean waves, rain sounds, forest bathing">
+    <meta name="author" content="Serenity Space Team">
     <title>Serenity Space | Find Your Inner Peace</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> <!-- 添加 Font Awesome -->
     <link rel="stylesheet" href="Relax.css">
 </head>
 <body>
 
+    <!-- 头部导航 -->
     <header>
         <div class="container header-container">
             <a href="javascript:loadPage('home')" class="logo">
                 <i class="fas fa-leaf"></i>
                 <span class="logo-text">Serenity Space</span>
             </a>
-            <nav></nav>
+            <nav>
+                <ul>
+                    <li><a href="javascript:loadPage('home')">Home</a></li>
+                    <li><a href="javascript:loadPage('ocean')">Ocean Waves</a></li>
+                    <li><a href="javascript:loadPage('rain')">Rain Sounds</a></li>
+                    <li><a href="javascript:loadPage('forest')">Forest Sounds</a></li>
+                    <li><a href="javascript:loadPage('fireplace')">Fireplace</a></li>
+                    <li><a href="javascript:loadPage('stream')">Stream</a></li>
+                    <li><a href="javascript:loadPage('forest-bathing')">Forest Bathing</a></li>
+                </ul>
+            </nav>
             <div class="mobile-toggle">
                 <i class="fas fa-bars"></i>
             </div>
         </div>
     </header>
 
-    <!-- 主页内容 -->
+    <!-- 主页 -->
     <section id="home" class="page">
         <div class="hero">
             <div class="hero-content">
                 <h1>Find Your Inner Peace</h1>
-                <p>Welcome to Serenity Space, your sanctuary for relaxation and mindfulness in the digital world. Discover natural sounds, stress relief techniques, and inspiring content.</p>
+                <p>Welcome to Serenity Space, your sanctuary for relaxation and mindfulness in the digital world. Discover natural sounds, stress relief techniques, and inspiring content designed to help you unwind, reduce stress, and improve your sleep quality.</p>
+                <a href="#explore" class="hero-btn">Explore Now</a>
             </div>
-            <div class="sound-links">
+            <div class="sound-links" id="explore">
                 <a href="javascript:loadPage('ocean')">Ocean Waves</a>
                 <a href="javascript:loadPage('rain')">Rain Sounds</a>
                 <a href="javascript:loadPage('forest')">Forest Sounds</a>
@@ -37,75 +53,114 @@
                 <a href="javascript:loadPage('forest-bathing')">Forest Bathing</a>
             </div>
         </div>
+        <div class="container mt-5">
+            <p>Serenity Space offers a curated collection of nature sounds backed by scientific research to promote relaxation and mental well-being. Whether you're looking to meditate, focus, or simply relax, our platform provides the tools you need.</p>
+        </div>
     </section>
 
-    <!-- 动态页面内容 - 为每个页面添加了顶部边距 -->
+    <!-- 子页面：Ocean Waves -->
     <section id="ocean" class="content-page" style="display: none;">
         <div class="container">
             <h2>Ocean Waves Therapy</h2>
             <audio controls>
                 <source src="OceanWave.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
             </audio>
             <img src="Waves.jpg" alt="Ocean Waves">
-            <p>Immerse yourself in the relaxing sounds of ocean waves crashing on the shore...</p>
+            <p>Immerse yourself in the calming rhythm of ocean waves crashing against the shore. Studies show that the sound of water can lower cortisol levels, helping to reduce stress and anxiety. Perfect for meditation, sleep, or background ambiance during work, this natural soundscape brings the serenity of the seaside to your daily life.</p>
+            <p>Ocean wave therapy has been used for centuries as a natural remedy for restlessness. The repetitive sound mimics the human heartbeat, creating a soothing effect that can improve focus and emotional balance. Try listening for 15 minutes a day to experience its full benefits.</p>
+            <div class="ad-space" style="margin: 20px auto; width: 300px; height: 250px; background: #eee; text-align: center; line-height: 250px;">Ad Space</div>
         </div>
     </section>
 
+    <!-- 子页面：Rain Sounds -->
     <section id="rain" class="content-page" style="display: none;">
         <div class="container">
             <h2>Rain Sounds</h2>
             <audio controls>
                 <source src="RainSound.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
             </audio>
             <img src="Rain.jpg" alt="Rain Sounds">
-            <p>Experience the soothing patter of rain that creates a natural white noise...</p>
+            <p>Experience the soothing patter of raindrops, a natural white noise that masks distractions and promotes deep relaxation. Rain sounds are scientifically proven to enhance sleep quality by calming the nervous system and reducing overactive thoughts.</p>
+            <p>Whether you're studying, working, or winding down for the night, rain sounds provide a gentle backdrop that fosters concentration and peace. Pair this audio with a warm drink and dim lighting for an ultimate cozy experience.</p>
+            <div class="ad-space" style="margin: 20px auto; width: 300px; height: 250px; background: #eee; text-align: center; line-height: 250px;">Ad Space</div>
         </div>
     </section>
 
+    <!-- 子页面：Forest Sounds (示例，其他页面类似) -->
     <section id="forest" class="content-page" style="display: none;">
         <div class="container">
             <h2>Forest Sounds</h2>
             <audio controls>
                 <source src="ForestSound.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
             </audio>
             <img src="Forest.jpg" alt="Forest Sounds">
-            <p>Experience the gentle rustling of leaves and soft forest sounds...</p>
+            <p>Step into a tranquil forest with the gentle rustling of leaves, chirping birds, and distant winds. Forest sounds are known to reduce mental fatigue and boost creativity, making them ideal for mindfulness practices or creative work.</p>
+            <p>Research suggests that exposure to forest soundscapes can lower blood pressure and enhance mood. Use this audio during a break to reconnect with nature, even from the comfort of your home.</p>
+            <div class="ad-space" style="margin: 20px auto; width: 300px; height: 250px; background: #eee; text-align: center; line-height: 250px;">Ad Space</div>
         </div>
     </section>
 
     <section id="fireplace" class="content-page" style="display: none;">
         <div class="container">
-            <h2>Fireplace</h2>
+            <h2>fireplaceSound</h2>
             <audio controls>
                 <source src="fireplaceSound.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
             </audio>
-            <img src="fireplace.jpg" alt="Fireplace">
-            <p>The warm, gentle crackling of a fireplace creates a sense of comfort...</p>
+            <img src="fireplace.jpg" alt="fireplace">
+            <p>Step into a tranquil forest with the gentle rustling of leaves, chirping birds, and distant winds. Forest sounds are known to reduce mental fatigue and boost creativity, making them ideal for mindfulness practices or creative work.</p>
+            <p>Research suggests that exposure to forest soundscapes can lower blood pressure and enhance mood. Use this audio during a break to reconnect with nature, even from the comfort of your home.</p>
+            <div class="ad-space" style="margin: 20px auto; width: 300px; height: 250px; background: #eee; text-align: center; line-height: 250px;">Ad Space</div>
         </div>
     </section>
 
     <section id="stream" class="content-page" style="display: none;">
         <div class="container">
-            <h2>Stream</h2>
+            <h2>Stream Sounds Therapy</h2>
             <audio controls>
                 <source src="StreamSound.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
             </audio>
             <img src="Stream.jpg" alt="Stream">
-            <p>The gentle bubbling of a woodland stream creates a peaceful soundscape...</p>
+            <p>Relax to the gentle bubbling of a woodland stream, a natural sound that brings peace and tranquility to any setting. The flowing water creates a rhythmic pattern that can help calm your mind, reduce anxiety, and improve concentration—perfect for meditation or a quiet evening at home.</p>
+            <p>Stream sounds are often used in sound therapy to mimic the soothing effects of nature. Research indicates that water-based sounds can lower heart rates and promote a sense of well-being. Incorporate this audio into your daily routine for a refreshing mental reset.</p>
+            <div class="ad-space" style="margin: 20px auto; width: 300px; height: 250px; background: #eee; text-align: center; line-height: 250px;">Ad Space</div>
         </div>
     </section>
 
     <section id="forest-bathing" class="content-page" style="display: none;">
         <div class="container">
-            <h2>Forest Bathing</h2>
+            <h2>Forest Bathing Soundscape</h2>
             <audio controls>
                 <source src="Forestbathing.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
             </audio>
             <img src="forest bathing.jpg" alt="Forest Bathing">
-            <p>Explore the healing power of nature...</p>
+            <p>Explore the healing power of nature with our forest bathing soundscape, featuring the soft rustle of leaves, distant bird calls, and a gentle breeze. Inspired by the Japanese practice of Shinrin-yoku, this audio helps you reconnect with the natural world, reducing stress and enhancing mental clarity.</p>
+            <p>Forest bathing has been scientifically shown to boost immune function and lower cortisol levels. Whether you're practicing mindfulness or simply seeking a moment of calm, this soundscape offers a virtual escape to the woods. Try it during a walk or while resting indoors.</p>
+            <div class="ad-space" style="margin: 20px auto; width: 300px; height: 250px; background: #eee; text-align: center; line-height: 250px;">Ad Space</div>
         </div>
     </section>
 
+    <!-- 其他子页面（fireplace, stream, forest-bathing）类似，内容略 -->
+
+    <!-- 页脚 -->
+    <footer>
+        <div class="container">
+            <div class="footer-links">
+                <a href="#">About Us</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Contact</a>
+            </div>
+            <p class="footer-text">&copy; 2025 Serenity Space. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
     <script>
         const mobileToggle = document.querySelector('.mobile-toggle');
         const nav = document.querySelector('nav');
@@ -122,27 +177,53 @@
             }
         });
 
-        // 动态加载页面内容
         function loadPage(page) {
-            // 隐藏所有页面
-            document.querySelectorAll('.page, .content-page').forEach(section => {
-                section.style.display = 'none';
-            });
+    document.querySelectorAll('.page, .content-page').forEach(section => {
+        section.style.display = 'none';
+    });
+    const targetPage = document.getElementById(page);
+    if (targetPage) {
+        targetPage.style.display = 'block';
+        window.scrollTo(0, 0);
 
-            // 显示目标页面
-            const targetPage = document.getElementById(page);
-            if (targetPage) {
-                targetPage.style.display = 'block';
-                // 滚动到页面顶部
-                window.scrollTo(0, 0);
-            }
+        // 动态更新标题和描述
+        const metaDescription = document.querySelector('meta[name="description"]');
+        switch (page) {
+            case 'home':
+                document.title = 'Serenity Space | Find Your Inner Peace';
+                metaDescription.setAttribute('content', 'Serenity Space - Professional relaxation platform offering nature sound therapy, mindfulness guides, and scientific articles.');
+                break;
+            case 'ocean':
+                document.title = 'Ocean Waves Therapy | Serenity Space';
+                metaDescription.setAttribute('content', 'Relax with ocean wave sounds to reduce stress and improve sleep at Serenity Space.');
+                break;
+            case 'rain':
+                document.title = 'Rain Sounds | Serenity Space';
+                metaDescription.setAttribute('content', 'Enjoy soothing rain sounds for relaxation and focus at Serenity Space.');
+                break;
+            case 'forest':
+                document.title = 'Forest Sounds | Serenity Space';
+                metaDescription.setAttribute('content', 'Experience calming forest sounds for mindfulness and creativity at Serenity Space.');
+                break;
+            case 'fireplace':
+                document.title = 'Fireplace Sounds | Serenity Space';
+                metaDescription.setAttribute('content', 'Unwind with the cozy crackling of a fireplace at Serenity Space.');
+                break;
+            case 'stream':
+                document.title = 'Stream Sounds Therapy | Serenity Space';
+                metaDescription.setAttribute('content', 'Relax with the gentle sounds of a flowing stream at Serenity Space.');
+                break;
+            case 'forest-bathing':
+                document.title = 'Forest Bathing Soundscape | Serenity Space';
+                metaDescription.setAttribute('content', 'Discover the healing power of forest bathing sounds at Serenity Space.');
+                break;
         }
+    }
+}
 
-        // 页面加载时显示主页
         window.onload = () => {
-            loadPage('home'); // 显示主页
+            loadPage('home');
         };
     </script>
-
 </body>
 </html>
